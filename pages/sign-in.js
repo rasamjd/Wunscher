@@ -112,7 +112,7 @@ function SignIn() {
                       Sign in
                 </button>
                 <Link href="/sign-up">
-                  <a  className="in-dont">Don't have an account?</a>
+                  <a  className="in-dont">{"Don't have an account"}</a>
                 </Link>
               </div>
       
