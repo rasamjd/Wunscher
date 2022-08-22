@@ -83,7 +83,7 @@ function Entry() {
         </div>
       </div>
       <div className="entry-description">
-        Discover your friends wishlists and bring a smile on someone's face
+        {"Discover your friends wishlists and bring a smile on someone's face"}
       </div>
       <div className="entry-searchSec">
         <div className='entry-searchBar'>
