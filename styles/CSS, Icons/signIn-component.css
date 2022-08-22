@@ -1,0 +1,196 @@
+.in-table {
+  background-color: rgb(44, 44, 44);
+  position: absolute;
+  height: 700px;
+  width: 100%;
+}
+
+.in-table-second {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  position: relative;
+  width: 480px;
+  height: 560px;
+  top: 20px;
+}
+
+.in-container {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.47);
+  left: 50%;
+  transform: translate(-50%, 0);
+  
+}
+
+.in-title {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 17px;
+  margin-top: 8px;
+  color: rgb(255, 255, 255);
+  font-weight: lighter;
+}
+
+.in-sec {
+  position: absolute;
+  width: 86%;
+  height: 80px;
+  top: 50px;
+  background: rgba(255, 255, 255, 0.1); 
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 0 20px 20px 0;
+}
+
+.in-home-btn {
+  position: absolute;
+  text-decoration: none;
+  padding: 12px;
+  bottom: 40px;
+  left: 40px;
+  text-align: center;
+  color: white;
+  letter-spacing: 0.8px;
+  font-size: 16px;
+  background-color: initial;
+  border: 0;
+}
+
+.in-btn {
+  position: absolute;
+  text-decoration: none;
+  background-color: rgb(86, 0, 97);
+  padding: 12px;
+  bottom: 40px;
+  right: 40px;
+  text-align: center;
+  color: white;
+  letter-spacing: 0.8px;
+  border-radius: 30px;
+  border: 0;
+  font-size: 16px;
+
+}
+
+.in-p {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  top: 15px;
+  left: 5px;
+}
+
+.in-in {
+  position: absolute;
+  border: 0;
+  height: 27px;
+  width: 200px;
+  border-radius: 0 15px 15px 0;
+  border-left: solid 3px rgb(84, 0, 95);
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 1);
+  background-color: #fad3ff;
+  bottom: 15px;
+  color: rgb(44, 44, 44);
+  padding-left: 5px;
+  transition: 200ms;
+  font-size: 16px;
+}
+
+.in-in:focus {
+  outline: none;
+  background-color: rgb(255, 255, 255);
+}
+
+.in-dont {
+  position: absolute;
+  color: rgb(255, 137, 68);
+  bottom: 170px;
+  left: 30px;
+  font-size: 17px;
+}
+
+.in-usernameSec {
+  top: 70px;
+}
+
+.in-passwordSec {
+  top: 165px;
+}
+
+.in-ball-1 {
+  position: absolute;
+  animation: MoveUpDown 20s linear infinite;
+  aspect-ratio : 1 / 1;
+  border-radius: 50%;
+  background-image: radial-gradient(rgb(255, 123, 47), rgb(199, 73, 0), rgb(49, 49, 49) );
+  width: 40%;
+  z-index: -1;
+  top: 20%;
+  right: 5%;
+}
+
+.in-ball-2 {
+  position: absolute;
+  animation: MoveUpDown 20s linear infinite;
+  aspect-ratio : 1 / 1;
+  border-radius: 50%;
+  background-image: radial-gradient(rgb(125, 0, 141), rgb(86, 0, 97), rgb(49, 49, 49));
+  width: 65%;
+  z-index: -1;
+  top: 48%;
+  left: -5%;
+}
+
+.up-after-err-p {
+  position: absolute;
+  margin: 25px;
+  top: 40px;
+  font-size: 18px;
+}
+
+.up-after-return {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border: 0;
+  border-radius: 50px;
+  background-color: rgb(86, 0, 97);
+  padding: 10px;
+  border-radius: 40px;
+  font-size: 20px;
+}
+
+.up-after-res-p {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 40px;
+  font-size: 20px;
+}
+
+.up-after-res-link {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 60px;
+  color: rgb(255, 255, 255);
+  text-decoration: 0;
+  background-color: rgb(86, 0, 97);
+  padding: 10px;
+  border-radius: 40px;
+  font-size: 20px;
+}
+
+.up-username-err {
+  color: rgb(255, 94, 0);
+}

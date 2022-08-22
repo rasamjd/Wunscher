@@ -1,0 +1,226 @@
+.o-table {
+  background-color: rgb(44, 44, 44);
+  position: absolute;
+  height: 1000px;
+  width: 100%;
+}
+.o-header {
+  position: relative;
+  width: 94%;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.26);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.47);
+  margin: auto;
+  top: 30px;
+  z-index: 3;
+}
+
+.o-logo {
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  top: 16px;
+  left: 20px;
+}
+
+.o-inBtns {
+  position: absolute;
+  min-width: 200px;
+  height: 70px;
+  right: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.o-signUp {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 10px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(65, 0, 73);
+  text-align: center;
+  padding: 15px 20px;
+  border-radius: 15px;
+}
+
+.o-signIn {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 120px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 15px;
+}
+
+.ball-1 {
+  position: absolute;
+  animation: MoveUpDown 20s linear infinite;
+  aspect-ratio : 1 / 1;
+  border-radius: 50%;
+  background-image: radial-gradient(rgb(255, 123, 47), rgb(199, 73, 0), rgb(49, 49, 49) );
+  width: 45%;
+  max-width: 460px;
+  right: 8%;
+  top: 9%;
+}
+
+.ball-2 {
+  position: absolute;
+  animation: MoveUpDown 20s linear infinite;
+  background-color: rgb(65, 0, 73); 
+  background-image: radial-gradient(rgb(125, 0, 141), rgb(86, 0, 97), rgb(49, 49, 49));
+  width: 30%;
+  max-width: 270px;
+  min-width: 80px;
+  aspect-ratio : 1 / 1;
+  border-radius: 50%;
+  top: 5%;
+  left: 8%;
+  min-width: 100px;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+}
+
+.o-list-container {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 600px;
+  width: 84%;
+  max-width: 800px; 
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 160px;
+  z-index: 1;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.47);
+  border-radius: 50px;
+}
+
+.o-info {
+  position: absolute;
+  width: 350px;
+  height: 56px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50px 0 50px 0 ;
+  border: 1px solid rgba(255, 255, 255, 0.47);
+
+}
+
+.o-user-img {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid 2px rgb(241, 241, 241);
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 27px;
+  background-color: initial;
+  background-image: url("user.png");
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.o-username  {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding: 5px 10px 5px 10px;
+  left: 75px;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 22px;
+  color: rgb(241, 241, 241);
+  border-radius: 8px;
+}
+
+.o-list-bar {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 90%;
+  height: 600px;
+  top: 60px;
+  padding-top: 5px;
+}
+
+.o-list {
+  position: relative;
+  width: 94%;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.05);
+  left: 50%;
+  transform: translate(-50%, 0);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
+  min-width: 360px;
+  margin-top: 10px;
+}
+
+.o-img-div {
+  position: absolute;
+  height: 100%;
+  width: 140px;
+  left: 0;
+  border-radius: 30px 0 0 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.6);
+  display: none;
+}
+
+.o-info-div {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  padding: 12px;
+}
+
+.o-list-title {
+  color: rgb(241, 241, 241);
+  background-color: rgb(125, 0, 141);
+  position: relative;
+  margin: 3px;
+  margin: 0 0 0 5px;
+  font-size: 19px;
+  padding: 4px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.o-list-description {
+  color: rgb(241, 241, 241);
+  position: relative;
+  margin: 6px 0 3px 12px;
+  font-size: 17px;
+  background-color: inherit;
+}
+
+.o-list-link {
+  position: relative;
+  color: rgb(255, 190, 153);
+  text-decoration: underline;
+  margin: 15px 0 0 12px;
+  font-size: 18px;
+}
+
+.o-list-link:hover {
+  color: rgb(199, 73, 0);
+}

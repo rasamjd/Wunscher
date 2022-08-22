@@ -1,0 +1,408 @@
+.u-table {
+  background-color: rgb(44, 44, 44);
+  position: absolute;
+  height: 800px;
+  width: 100%;
+}
+.u-header {
+  position: relative;
+  width: 94%;
+  height: 140px;
+  background: rgba(255, 255, 255, 0.26);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.47);
+  margin: auto;
+  top: 30px;
+  z-index: 3;
+}
+
+.u-logo {
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  top: 16px;
+  left: 20px;
+}
+
+.ball-1 {
+  position: absolute;
+  animation: MoveUpDown 20s linear infinite;
+  aspect-ratio : 1 / 1;
+  border-radius: 50%;
+  background-image: radial-gradient(rgb(255, 123, 47), rgb(199, 73, 0), rgb(49, 49, 49) );
+  width: 45%;
+  max-width: 460px;
+  right: 8%;
+  top: 9%;
+}
+
+.ball-2 {
+  position: absolute;
+  animation: MoveUpDown 20s linear infinite;
+  background-color: rgb(65, 0, 73); 
+  background-image: radial-gradient(rgb(125, 0, 141), rgb(86, 0, 97), rgb(49, 49, 49));
+  width: 30%;
+  max-width: 270px;
+  min-width: 80px;
+  aspect-ratio : 1 / 1;
+  border-radius: 50%;
+  top: 5%;
+  left: 8%;
+  min-width: 100px;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+}
+
+.u-list-container {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 200px;
+  width: 84%;
+  max-width: 800px; 
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 200px;
+  z-index: 1;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.47);
+  border-radius: 50px;
+}
+
+.u-user {
+  position: absolute;
+  width: 310px;
+  height: 96px;
+  display: block;
+  bottom: 0;
+  left: 0;
+}
+
+.u-user-img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid 3px rgb(241, 241, 241);
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 20px;
+  background-color: initial;
+  background-image: url("user.png");
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.u-username  {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding: 5px 10px 5px 10px;
+  left: 75px;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 24px;
+  color: rgb(241, 241, 241);
+  border-radius: 10px;
+}
+
+.u-list-bar {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 90%;
+  height: 200px;
+  top: 70px;
+  padding-top: 5px;
+}
+
+.u-list {
+  position: relative;
+  width: 94%;
+  height: 115px;
+  background-color: rgba(0, 0, 0, 0.05);
+  left: 50%;
+  transform: translate(-50%, 0);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
+  min-width: 360px;
+  margin-top: 10px;
+}
+
+.u-info-div {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.u-list-title {
+  color: rgb(241, 241, 241);
+  background-color: rgb(125, 0, 141);
+  position: relative;
+  margin: 14px 0 3px 16px;
+  font-size: 20px;
+  padding: 4px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.u-list-description {
+  color: rgb(241, 241, 241);
+  position: relative;
+  margin: 5px 0 3px 24px;
+  font-size: 17px;
+  background-color: inherit;
+}
+
+.u-list-link {
+  position: relative;
+  color: rgb(255, 190, 153);
+  text-decoration: underline;
+  margin: 5px 0 3px 24px;
+  font-size: 18px;
+}
+
+.u-list-link:hover {
+  color: rgb(199, 73, 0);
+}
+
+.u-add {
+  position: absolute;
+  background-color: rgb(102, 102, 102, 0.1);
+  background-image: url("plus.png");
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 40px;
+  right: 20px;
+  top: 20px;
+  transition: 200ms;
+  border: none;
+}
+
+.u-add:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.u-del {
+  position: absolute;
+  background-color: rgb(102, 102, 102, 0.1);
+  background-image: url("trash.png");
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  width: 40px;
+  height: 40px;
+  right: 5px;
+  top: 5px;
+  border-radius: 20px;
+  transition: 200ms;
+}
+
+.u-del:hover {
+  background-color: rgba(156, 156, 156, 0.4);
+}
+
+.user-table-add {
+  background-color: rgb(44, 44, 44);
+  position: absolute;
+  height: 100vh;
+  width: 100%;  
+}
+
+.user-container-add {
+  position: relative;
+  width: 60%;
+  min-width: 300px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(19px);
+  border: 1px solid rgba(255, 255, 255, 0.47);
+  margin: auto;
+  top: 70px;
+  z-index: 1;
+}
+
+.user-title-add {
+  top: 36px;
+  position: relative;
+  width: 90%;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+.user-desc-add {
+  top: 72px;
+  position: relative;
+  width: 90%;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  
+  margin: auto;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.user-add-add-btn {
+  position: absolute;
+  background-color: rgb(65, 0, 73);
+  color: rgb(241, 241, 241);
+  display: block;
+  bottom: 30px;
+  right: 9%;
+  border: 0;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 15px 30px 15px 30px;
+  transition: 200ms;
+}
+
+.user-add-add-btn:hover {
+  background-color: rgb(86, 0, 97);
+}
+
+.user-add-cancel-btn {
+  position: absolute;
+  background-color: rgba(241, 241, 241, 0.05);
+  color: rgb(241, 241, 241);
+  display: block;
+  bottom: 30px;
+  left: 9%;
+  border: 0;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 15px 30px 15px 30px;
+  transition: 200ms;
+}
+
+.user-add-cancel-btn:hover {
+  background-color: rgba(241, 241, 241, 0.15);
+}
+
+.user-title-add-input {
+  position: relative;
+  padding: 6px;
+  border: 0;
+  border-bottom: solid 2px rgb(255, 123, 47);
+  margin: 20px;
+  color: rgb(241, 241, 241);
+  background-color: inherit;
+  font-size: 16px;
+  display: block;
+}
+
+.user-title-add-input:focus {
+  outline: 0;
+}
+
+.user-title-add-name {
+  position: relative;
+  color: rgb(241, 241, 241);
+  top: -10px;
+  left: 10px;
+  backdrop-filter: blur(12px);
+  background-color: rgb(73, 73, 73);
+  padding: 3px;
+  border-radius: 3px;
+  
+}
+
+.user-desc-add-input {
+  position: relative;
+  padding: 6px;
+  border: 0;
+  border-bottom: solid 2px rgb(255, 123, 47);
+  margin: 20px;
+  color: rgb(241, 241, 241);
+  background-color: inherit;
+  font-size: 16px;
+  display: block;
+  color: rgb(223, 221, 221);
+  width: 80%;
+}
+
+.user-desc-add-input:focus {
+  outline: 0;
+}
+
+.user-link-add-input {
+  position: absolute;
+  padding: 6px;
+  border: 0;
+  border-bottom: solid 2px rgb(255, 123, 47);
+  margin: 20px;
+  color: rgb(241, 241, 241);
+  background-color: inherit;
+  font-size: 16px;
+  display: block;
+  bottom: 0px;
+  width: 80%;
+  
+}
+
+.user-link-add-input::placeholder {
+  color: rgb(241, 241, 241, 0.7);
+}
+
+.user-link-add-input:focus {
+  outline: 0;
+}
+
+.user-desc-add-name {
+  position: relative;
+  color: rgb(241, 241, 241);
+  top: -10px;
+  left: 10px;
+  backdrop-filter: blur(12px);
+  background-color: rgb(73, 73, 73);
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.user-ball-1-add {
+  position: absolute;
+  animation: MoveUpDown 20s linear infinite;
+  aspect-ratio : 1 / 1;
+  border-radius: 50%;
+  background-image: radial-gradient(rgb(255, 123, 47), rgb(199, 73, 0), rgb(49, 49, 49) );
+  width: 20%;
+  min-width: 160px;
+  top: 20%;
+  right: 18%;
+  transform: translate(0, -50%);
+}
+
+.user-ball-2-add {
+  position: absolute;
+  animation: MoveUpDown 20s linear infinite;
+  aspect-ratio : 1 / 1;
+  border-radius: 50%;
+  background-image: radial-gradient(rgb(125, 0, 141), rgb(86, 0, 97), rgb(49, 49, 49));
+  width: 27%;
+  min-width: 200px;
+  top: 40%;
+  left: 15%;
+}
